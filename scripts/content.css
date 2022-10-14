@@ -1,0 +1,33 @@
+.lobster {
+  height: 100px;
+  width: 100px;
+  /* huge z-index to keep lobsters on top of all other elements */
+  z-index: 9999;
+  position: absolute;
+}
+
+.clockwise {
+  animation: clockwise 3s infinite linear;
+}
+
+.counter-clockwise {
+  animation: counter-clockwise 3s infinite linear;
+}
+
+@keyframes clockwise {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes counter-clockwise {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+
